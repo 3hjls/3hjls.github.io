@@ -1,0 +1,23 @@
+---
+layout: base
+title: news
+---
+
+<ul class="news-list">
+  {% for post in site.categories.news %}
+  <li class="news-item">
+    <a href="/">
+      <div class="img-box">
+        <img
+          src="https://images.freeimages.com/images/large-previews/31c/red-fox-in-the-wild-1-1624832.jpg"
+          alt=""
+        />
+      </div>
+      <div class="txt-box">
+        <p class="date">2024-02-02</p>
+        <p class="title">ブックスカラシップ授与</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

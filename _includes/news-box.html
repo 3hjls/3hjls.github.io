@@ -1,0 +1,29 @@
+<div class="news-box">
+  <div class="inner">
+    <div class="news-content">
+      <div class="news-top-area">
+        <div class="news-title">入学案内 News</div>
+        <p class="news-button">
+          <a href="" class="news-btn">MORE +</a>
+        </p>
+      </div>
+      <div class="news-body-area">
+        <ul class="news-list">
+          {% for item in site.categories.news %}
+          <li class="news-item">
+            <a href="/">
+              <div class="img-box">
+                <img src="/assets/images/{{ item.permalink }}" alt="" />
+              </div>
+              <div class="txt-box">
+                <p class="date">{{ item.date | date: "%Y-%m-%d" }}</p>
+                <p class="title">{{item.title}}</p>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
