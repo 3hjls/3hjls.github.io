@@ -4,7 +4,7 @@
       <div class="news-top-area">
         <div class="news-title">入学案内 News</div>
         <p class="news-button">
-          <a href="" class="news-btn"
+          <a href="/news" class="news-btn"
             >MORE
             <i class="xi-plus-min"></i>
           </a>
@@ -12,15 +12,15 @@
       </div>
       <div class="news-body-area">
         <ul class="news-list">
-          {% for item in site.categories.news %}
+          {% for post in site.categories.news %}
           <li class="news-item">
-            <a href="/">
+            <a href="{{ post.url }}">
               <div class="img-box">
-                <img src="/assets/images/{{ item.featured_image }}" alt="" />
+                <img src="/assets/images/{{ post.featured_image }}" alt="" />
               </div>
               <div class="txt-box">
-                <p class="news-date">{{ item.date | date: "%Y-%m-%d" }}</p>
-                <p class="title">{{item.title}}</p>
+                <p class="news-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+                <p class="title">{{post.title}}</p>
               </div>
             </a>
           </li>
