@@ -2,21 +2,35 @@
 layout: base
 ---
 
-<article class="post">
-  <div class="sub-banner">
-    <div class="about-sub-banner-bg"></div>
-    <ul class="banner-text-area">
-      <li class="about-title-en">ABOUT US</li>
-      <li class="about-title-jp">교회소개</li>
+<div class="sub-top">
+  <div class="sub-vis-box">
+    <p>
+      <img src="" alt="3H学校" />
+    </p>
+  </div>
+</div>
+<div class="sub">
+  <div class="sub-left">
+    <h2 class="about-title">
+      <span>学校紹介</span>
+    </h2>
+    <ul>
+      {% for menu in site.data.variables.about-menus %}
+      <li class="about-list-item">
+        <a href="/">{{ menu.title }}</a><i class="xi-play"></i>
+      </li>
+      {% endfor %}
     </ul>
   </div>
-
-  <header class="post-header">
-    <h2 class="about-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="about-addon"></div>
-  <div class="pastor-introduction"></div>
-
-  <div class="post-content">{{ content }}</div>
-</article>
+  <div class="sub-right">
+    <div class="sub-right-title">
+      <h3>学校紹介</h3>
+      <div class="sub-nav">
+        <span><i class="xi-home"></i></span> <i class="xi-angle-right-min"></i>
+        <span>学校紹介</span> <i class="xi-angle-right-min"></i>
+        <span>学校紹介</span>
+      </div>
+    </div>
+    <div class="sub-contents"></div>
+  </div>
+</div>

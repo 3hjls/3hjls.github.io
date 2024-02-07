@@ -4,7 +4,10 @@
       <div class="news-top-area">
         <div class="news-title">入学案内 News</div>
         <p class="news-button">
-          <a href="" class="news-btn">MORE +</a>
+          <a href="" class="news-btn"
+            >MORE
+            <i class="xi-plus-min"></i>
+          </a>
         </p>
       </div>
       <div class="news-body-area">
@@ -16,7 +19,7 @@
                 <img src="/assets/images/{{ item.permalink }}" alt="" />
               </div>
               <div class="txt-box">
-                <p class="date">{{ item.date | date: "%Y-%m-%d" }}</p>
+                <p class="news-date">{{ item.date | date: "%Y-%m-%d" }}</p>
                 <p class="title">{{item.title}}</p>
               </div>
             </a>

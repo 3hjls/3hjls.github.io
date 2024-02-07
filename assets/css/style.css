@@ -6,9 +6,6 @@ caption,
 .blind {
   display: none;
 }
-html {
-  font-size: 10px;
-}
 body {
   margin: 0;
   padding: 0;
@@ -123,7 +120,6 @@ select,
 textarea,
 button {
   color: #333;
-  font-size: 10px;
   line-height: 1.5;
   letter-spacing: -0.05em;
   font-family: "Noto Sans JP", sans-serif;
@@ -499,11 +495,6 @@ h6 {
  */
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: #111111;
-  text-decoration: underline;
 }
 
 .social-media-list a:hover,
@@ -1474,6 +1465,14 @@ table td {
   font-size: 17px;
 }
 
+.admission-date {
+  color: #018665;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
 .popup-content {
   width: 20.5rem;
 }
@@ -1485,12 +1484,6 @@ table td {
 
 .news-title {
   margin-bottom: 25px;
-}
-
-.news-button {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .news-box {
@@ -1528,7 +1521,6 @@ table td {
   padding: 20px 10px;
   border-bottom: 2px solid #018665;
   font-weight: 400;
-  height: 75px;
 }
 
 .news-item .txt-box .title {
@@ -1537,6 +1529,12 @@ table td {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.news-date {
+  font-size: 16px;
+  color: #018665;
+  margin-bottom: 5px;
 }
 
 /* information-box */
@@ -1751,9 +1749,96 @@ li.footer-item:first-child:before {
 }
 
 /* about-page */
+.sub-top {
+  background: url(https://www.futabacollege.com/images/sub/sub-bg01.png)
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-width: 1100px;
+  height: 114px;
+  background-position: center;
+}
 
-.about-sub-banner-bg {
-  background-image: url(https://www.kcnla.org/data/image/20210812/2887647742__537725d20157e8adcd2f5545eab91efb95934347.png);
+.sub {
+  max-width: 1100px;
+  margin: 50px auto;
+  font-weight: 400;
+}
+
+.sub-left {
+  width: 220px;
+  float: left;
+  margin-right: 60px;
+}
+
+.about-title {
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  background: #87683b;
+  z-index: 1;
+}
+
+.about-list-item {
+  position: relative;
+}
+
+.about-list-item a {
+  color: #383d3f;
+  font-size: 16px;
+  display: block;
+  border-bottom: 1px #dadada dashed;
+  padding: 14px 15px 14px 30px;
+  position: relative;
+  z-index: 5;
+  font-weight: 400;
+  word-break: keep-all;
+}
+
+.about-list-item i {
+  position: absolute;
+  z-index: 3;
+  left: 10px;
+  top: 19px;
+  font-size: 16px;
+  color: #333;
+}
+
+.sub-right {
+  width: calc(100% - 280px);
+  float: right;
+  word-break: keep-all;
+}
+
+.sub-right-title {
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-top: 30px;
+}
+
+.sub-right-title h3 {
+  font-size: 25px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.sub-nav {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #a9a9a9;
+  font-weight: 300;
+}
+
+.sub-banner-bg {
+  background-image: url(https://www.futabacollege.com/images/sub/sub-bg01.png);
   min-height: 200px;
   background-size: cover;
   background-repeat: no-repeat;

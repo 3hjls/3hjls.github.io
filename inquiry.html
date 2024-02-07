@@ -1,6 +1,6 @@
 ---
 layout: sub-page-base
-title: 入学案内ニュース
+title: お問合せ
 ---
 
 <div class="sub">
@@ -9,13 +9,6 @@ title: 入学案内ニュース
       <span>{{ page.title }}</span>
       <img src="" alt="" />
     </h2>
-    <ul>
-      {% for menu in variables.data.site.admssion-menus %}
-      <li class="about-list-item">
-        <a href="/">{{ post.title }}</a><i class="xi-play"></i>
-      </li>
-      {% endfor %}
-    </ul>
   </div>
   <div class="sub-right">
     <div class="sub-right-title">
@@ -30,10 +23,10 @@ title: 入学案内ニュース
         <div class="post-wrapper">
   <section class="title-wrap">
     <h2>{{ page.title }}</h2>
-    <p>{{ page.title }} 件数 : {{ site.categories.news | size }}</p>
+    <p>{{ page.title }} 件数 : {{ site.categories.inquiry | size }}</p>
   </section>
   <section class="content-wrap">
-    {% for post in site.categories.news %}
+    {% for post in site.categories.inquiry %}
     <ul class="post-list-wrap">
       <li class="post-list">
         <a href="{{ post.url }}">

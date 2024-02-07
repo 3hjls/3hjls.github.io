@@ -1,0 +1,24 @@
+admission-menus:
+  - title: "留学ビザ"
+  - title: "留学以外のビザ"
+  - title: "学費"
+  - title: "奨学金"
+  - title: "入学案内ニュース"
+
+about-menus:
+  - title: "学校紹介"
+  - title: "年間スケジュール"
+  - title: "アクティビティ"
+  - title: "学校ニュース"
+  - title: "アクセス"
+
+course-menus:
+  - title: "学校紹介"
+  - title: "コース案内"
+  - title: "JLPT対策/文化体験"
+  - title: "就職支援"
+  - title: "大学・専門学校進学"
+  - title: "難関大学進学"
+  - title: "大学院進学"
+  - title: "個人/グループレッスン"
+  - title: "特別短期コース"
