@@ -1,18 +1,11 @@
 ---
-layout: base
+layout: sub-page-base
 title: 入学案内
 ---
-<div class="sub-top">
-  <div class="sub-vis-box">
-    <p>
-      <img src="" alt="3H学校" />
-    </p>
-  </div>
-</div>
 <div class="sub">
   <div class="sub-left">
     <h2 class="about-title">
-      <span>入学案内</span>
+      <span>{{ page.title }}</span>
     </h2>
     <ul>
       {% for menu in site.data.variables.admission-menus %}
@@ -54,3 +47,6 @@ title: 入学案内
     </div>
   </div>
 </div>
+
+
+

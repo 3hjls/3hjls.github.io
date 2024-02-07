@@ -12,12 +12,12 @@
       </div>
       <div class="admission-body-area">
         <ul class="admission-list">
-          {% for item in site.categories.admission %}
+          {% for post in site.categories.admission %}
           <li class="admission-item">
-            <a href="/">
-              <p class="title">{{item.title}}</p>
+            <a href="{{ post.url }}">
+              <p class="title">{{post.title}}</p>
             </a>
-            <p class="admission-date">{{ item.date | date: "%Y-%m-%d" }}</p>
+            <p class="admission-date">{{ post.date | date: "%Y-%m-%d" }}</p>
           </li>
           {% endfor %}
         </ul>
