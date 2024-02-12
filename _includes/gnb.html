@@ -1,5 +1,39 @@
-<nav class="gnb-wrapper">
-    <div class="trigger">
-        gnb page
-    </div>
-</nav>
+<div class="gnb-wrapper">
+  <nav class="trigger">
+    <ul class="gnb nav-items">
+      <li class="gnb01 nav-item">
+        <a href="/about/intro" class="m_tit">学校紹介</a>
+        <ul class="gnb2depth">
+          {% for menu in site.data.variables.about-menus %}
+          <li><a href="/about/{{menu.url}}">{{ menu.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li class="gnb02 nav-item">
+        <a href="/course/lecture" class="m_tit">授業/学校生活</a>
+        <ul class="gnb2depth js-h">
+          {% for menu in site.data.variables.course-menus %}
+          <li><a href="/course/{{menu.url}}">{{ menu.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li class="gnb03 nav-item">
+        <a href="/admission/student-visa" class="m_tit">入学案内</a>
+        <ul class="gnb2depth">
+          {% for menu in site.data.variables.admission-menus %}
+          <li><a href="/admission/{{menu.url}}">{{ menu.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      <li class="gnb04 nav-item">
+        <a href="/audio" class="m_tit">音声教材</a>
+      </li>
+      <li class="gnb05 nav-item">
+        <a href="/inquiry" class="m_tit">お問合せ</a>
+      </li>
+      <li class="gnb05 nav-item">
+        <a href="/access" class="m_tit">アクセス</a>
+      </li>
+    </ul>
+  </nav>
+</div>

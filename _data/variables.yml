@@ -1,24 +1,58 @@
-admission-menus:
-  - title: "留学ビザ"
-  - title: "留学以外のビザ"
-  - title: "学費"
-  - title: "奨学金"
-  - title: "入学案内ニュース"
-
 about-menus:
   - title: "学校紹介"
-  - title: "年間スケジュール"
-  - title: "アクティビティ"
-  - title: "学校ニュース"
-  - title: "アクセス"
+    url: intro
+    category: about
+  - title: "学校紹介ビデオ"
+    url: video
+    category: about
 
 course-menus:
+  - title: "授業"
+    url: lecture
+    category: course
+  - title: "学校行事"
+    url: event
+    category: course
+  - title: "進学サポート"
+    url: admission-support
+    category: course
+  - title: "就職サポート"
+    url: job-support
+    category: course
+  - title: "年間スケジュール"
+    url: annual-schedule
+    category: course
+  - title: "学生寮"
+    url: domitory
+    category: course
+
+admission-menus:
+  - title: "留学ビザ"
+    url: student-visa
+    category: admission
+  - title: "留学以外のビザ"
+    url: etc-visa
+    category: admission
+  - title: "学費"
+    url: tuition
+    category: admission
+  - title: "奨学金"
+    url: scholarship
+    category: admission
+  - title: "入学案内ニュース"
+    url: admission-news
+    category: admission
+
+gnb-menus:
   - title: "学校紹介"
-  - title: "コース案内"
-  - title: "JLPT対策/文化体験"
-  - title: "就職支援"
-  - title: "大学・専門学校進学"
-  - title: "難関大学進学"
-  - title: "大学院進学"
-  - title: "個人/グループレッスン"
-  - title: "特別短期コース"
+    url: about
+  - title: "授業/学校生活"
+    url: lecture-student-activity
+  - title: "入学案内"
+    url: admission
+  - title: "音声教材"
+    url: audio-instructional-materials
+  - title: "お問い合せ"
+    url: inquiry
+  - title: "アクセス"
+    url: access
