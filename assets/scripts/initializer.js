@@ -1,6 +1,6 @@
 // top-nav controller
 window.addEventListener("scroll", function () {
-  var gnbNav = document.getElementById("gnb-wrapper");
+  var gnbNav = document.getElementById("header-wrapper");
   var scrollY = window.scrollY;
 
   if (scrollY >= 45) {
