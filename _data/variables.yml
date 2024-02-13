@@ -45,13 +45,13 @@ admission-menus:
 
 gnb-menus:
   - title: "学校紹介"
-    url: about
+    url: about/intro
   - title: "授業/学校生活"
-    url: lecture-student-activity
+    url: course/lecture
   - title: "入学案内"
-    url: admission
+    url: admission/student-visa
   - title: "音声教材"
-    url: audio-instructional-materials
+    url: audio
   - title: "お問い合せ"
     url: inquiry
   - title: "アクセス"

@@ -14,40 +14,12 @@
       </a>
     </div>
   </li>
+  {% for menu in site.data.variables.gnb-menus %}
   <li class="sp-gnb-item">
-    <a href="/about/intro">
-      <span class="sp-gnb-text">学校紹介</span>
+    <a href="/{{menu.url}}">
+      <span class="sp-gnb-text">{{menu.title}}</span>
       <span class="sp-gnb-arrow"></span>
     </a>
   </li>
-  <li class="sp-gnb-item">
-    <a href="/course/lecture">
-      <span class="sp-gnb-text">授業/コース</span>
-      <span class="sp-gnb-arrow"></span>
-    </a>
-  </li>
-  <li class="sp-gnb-item">
-    <a href="/admission/student-visa">
-      <span class="sp-gnb-text">入学案内</span>
-      <span class="sp-gnb-arrow"></span>
-    </a>
-  </li>
-  <li class="sp-gnb-item">
-    <a href="/domitory">
-      <span class="sp-gnb-text">学生寮</span>
-      <span class="sp-gnb-arrow"></span>
-    </a>
-  </li>
-  <li class="sp-gnb-item">
-    <a href="/inquiry">
-      <span class="sp-gnb-text">お問合せ</span>
-      <span class="sp-gnb-arrow"></span>
-    </a>
-  </li>
-  <li class="sp-gnb-item">
-    <a href="/access">
-      <span class="sp-gnb-text">アクセス</span>
-      <span class="sp-gnb-arrow"></span>
-    </a>
-  </li>
+  {% endfor %}
 </ul>
