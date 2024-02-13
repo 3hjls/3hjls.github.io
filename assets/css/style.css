@@ -844,7 +844,6 @@ table td {
  * Page content
  */
 .page-content {
-  /* padding: 30px 0; */
   flex: 1 0 auto;
 }
 
@@ -1091,7 +1090,7 @@ table td {
   max-width: 100%;
 }
 
-#gnb-wrapper {
+#header-wrapper {
   display: flex;
   justify-content: space-between;
   max-width: 1300px;
@@ -1390,6 +1389,9 @@ li:hover .gnb2depth {
 
 .slide-item-3 {
   background-image: url(https://cdn.pixabay.com/photo/2023/07/08/09/53/monastery-8114076_1280.jpg);
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #slide-list {
@@ -1474,13 +1476,13 @@ li:hover .gnb2depth {
 }
 
 .admission-content {
-  width: calc(100% - 25rem);
+  width: calc(100% - 35rem);
   margin-right: 4rem;
 }
 
 .news-title,
 .admission-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -1522,7 +1524,7 @@ li:hover .gnb2depth {
 }
 
 .popup-content {
-  width: 20.5rem;
+  width: 35rem;
 }
 
 /* news-box */
@@ -1941,12 +1943,74 @@ li.footer-item:first-child:before {
   background-size: contain;
 }
 
-@media only screen and (max-width: 870px) {
-  #gnb-wrapper {
+/* mobile version */
+@media only screen and (max-width: 1230px) {
+  .header-top-wrapper {
     display: none;
+  }
+  .gnb-wrapper {
+    display: none;
+  }
+  #header-wrapper {
+    margin: 0;
   }
   #mobile-menu-bar {
     display: block;
+  }
+
+  .admission-content {
+    width: 100%;
+  }
+
+  /* common */
+  .inner {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .admission-box,
+  .news-box {
+    padding: 50px 15px;
+  }
+
+  /* admission-box */
+  .popup-content {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* news-box */
+  .news-list,
+  .information-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-item:nth-child(1) {
+    width: 100%;
+  }
+
+  .news-item {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* information-box */
+  .information-box {
+    padding: 0;
+  }
+  .information-box .inner .wrapper {
+    padding: 12px;
+  }
+
+  .information-img {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .information-img img {
+    width: 100%;
   }
 }
 
