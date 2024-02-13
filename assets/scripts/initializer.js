@@ -1,6 +1,6 @@
 // top-nav controller
 window.addEventListener("scroll", function () {
-  var gnbNav = document.getElementById("header-wrapper");
+  var gnbNav = document.getElementById("gnb-wrapper");
   var scrollY = window.scrollY;
 
   if (scrollY >= 45) {
@@ -13,7 +13,7 @@ window.addEventListener("scroll", function () {
 const closeButton = document.getElementById("sp-menu-close-btn");
 const menuBar = document.getElementById("mobile-menu-bar");
 const menuBg = document.getElementById("sp-menu-bg");
-const menuItems = document.getElementById("sp-menu-wrapper");
+const menuItems = document.getElementById("sp-menus");
 
 // menu open & close
 function openMenuBar() {

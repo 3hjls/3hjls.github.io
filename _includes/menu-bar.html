@@ -1,25 +1,27 @@
-<div id="sp-menu-bg">
-  <div id="sp-menu-close-btn"></div>
-</div>
-<ul id="sp-menu-wrapper">
-  <li class="sp-menu-top">
-    <div class="youtube-link">
-      <a
-        class="youtube-a-link"
-        href="https://www.youtube.com/@sdacic8933/streams"
-        target="_blank"
-      >
-        <i class="fab fa-youtube"></i>
-        Youtube
+<div class="sp-menu-wrapper">
+  <div id="sp-menu-bg">
+    <div id="sp-menu-close-btn"></div>
+  </div>
+  <ul id="sp-menus">
+    <li class="sp-menu-top">
+      <div class="youtube-link">
+        <a
+          class="youtube-a-link"
+          href="https://www.youtube.com/@sdacic8933/streams"
+          target="_blank"
+        >
+          <i class="fab fa-youtube"></i>
+          Youtube
+        </a>
+      </div>
+    </li>
+    {% for menu in site.data.variables.gnb-menus %}
+    <li class="sp-gnb-item">
+      <a href="/{{menu.url}}">
+        <span class="sp-gnb-text">{{menu.title}}</span>
+        <span class="sp-gnb-arrow"></span>
       </a>
-    </div>
-  </li>
-  {% for menu in site.data.variables.gnb-menus %}
-  <li class="sp-gnb-item">
-    <a href="/{{menu.url}}">
-      <span class="sp-gnb-text">{{menu.title}}</span>
-      <span class="sp-gnb-arrow"></span>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
