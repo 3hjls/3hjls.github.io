@@ -1937,7 +1937,7 @@ li.footer-item:first-child:before {
   background-size: contain;
 }
 
-/* mobile version */
+/* mobile version(1230px) */
 @media only screen and (max-width: 1230px) {
   .language-box .inner {
     display: none;
@@ -2013,6 +2013,22 @@ li.footer-item:first-child:before {
 }
 
 @media only screen and (max-width: 620px) {
+  /* sub-page */
+  .sub {
+    margin: 20px auto 40px;
+  }
+
+  .sub-left {
+    display: none;
+  }
+
+  .sub-right {
+    width: 100%;
+    float: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
   .header-top-left {
     display: none;
   }
