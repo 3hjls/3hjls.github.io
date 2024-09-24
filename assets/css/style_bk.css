@@ -140,9 +140,6 @@ section,
 summary,
 main {
   display: block;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Noto Sans JP",
-    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-    sans-serif;
 }
 
 ul,
@@ -1077,61 +1074,25 @@ table td {
   margin-right: 20px;
 }
 
-.logo-area {
-  width: 330px;
-  height: 85px;
-  background-image: url(/assets/images/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
 .logo {
-  width: 330px;
-  height: 70px;
-  position: absolute;
+  padding: 12px;
+  width: 240px;
+  margin-right: 30px;
 }
 
-#header-wrapper {
-  padding: 8px 0;
+.logo img {
+  max-width: 100%;
+}
+
+#gnb-wrapper {
+  display: flex;
+  justify-content: space-between;
   max-width: 1300px;
-  height: 70px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/* logo right side area */
-.h-nav {
-  display: flex;
-}
-
-.h-nav li {
-  margin-left: 20px;
-  background-color: #19498c;
-}
-
-.h-nav a {
-  width: 130px;
-  padding: 10px;
-  display: block;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
+  margin: 0 auto;
+  height: 85px;
 }
 
 /* gnb area */
-#gnb-area {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.nav-items {
-  display: flex;
-  justify-content: space-around;
-}
-
 .nav-item {
   display: inline-block;
   vertical-align: top;
@@ -1143,12 +1104,10 @@ table td {
 .nav-item > a {
   display: block;
   width: 150px;
-  line-height: 70px;
+  line-height: 85px;
   font-size: 1.8rem;
   box-sizing: border-box;
   font-weight: 500;
-  /* background: #f5f9ff;
-  color: #19498c; */
 }
 
 .nav-item > a:hover {
@@ -1157,10 +1116,10 @@ table td {
 
 .nav-item ul {
   position: absolute;
-  top: 70px;
+  top: 82px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px;
+  width: 160px;
   padding: 10px 0;
   z-index: 1;
   border-top: 3px solid #0e8e81;
@@ -1567,34 +1526,9 @@ li:hover .gnb2depth {
   margin: 100px 0;
 }
 
-.lead-box span {
-  display: block;
-}
-
-.lead-box .container {
+.lead-box.container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.lead-title {
-  text-align: center;
-  font-size: 4.2rem;
-  font-weight: 700;
-  color: #19498c;
-  margin-bottom: 50px;
-}
-
-.lead-text {
-  max-width: 840px;
-  margin: 0 auto;
-  font-size: 18px;
-  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "Noto Sans JP",
-    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-    sans-serif;
-  color: black;
-  max-width: 840px;
-  margin: 0 auto;
-  font-weight: 500;
 }
 
 /* news-box */
@@ -2021,7 +1955,7 @@ li.footer-item:first-child:before {
   .gnb-wrapper {
     display: none;
   }
-  #header-wrapper {
+  #gnb-wrapper {
     margin: 0;
   }
   #mobile-menu-bar {

@@ -1,12 +1,14 @@
-<div id="gnb-wrapper">
-  <a href="/">
-    <div class="wrapper logo">
-      <img src="/assets/images/logo.png" alt="logo" />
-      {%- assign default_paths = site.pages | map: "path" -%} {%- assign
-      page_paths = site.header_pages | default: default_paths -%} {%- assign
-      titles_size = site.pages | map: 'title' | join: '' | size -%} {%- if
-      titles_size > 0 -%} {%- endif -%}
-    </div>
-  </a>
-  {%- include gnb.html -%}
+<div id="header-wrapper">
+  <div class="logo-area">
+    <a class="logo" href="/"></a>
+  </div>
+
+  <div class="quick-menu">
+    <ul class="h-nav">
+      <li class="download"><a href="../document/">書類ダウンロード</a></li>
+      <li class="contact"><a href="../inquiry/">お問い合わせ</a></li>
+    </ul>
+  </div>
 </div>
+
+<div id="gnb-area">{%- include gnb.html -%}</div>
