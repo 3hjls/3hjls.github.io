@@ -32,6 +32,10 @@ sass:
   sass_dir: _sass
   style: compressed
 
+author: "3H Admin"
+
+# pagination settings
+
 # Reading Files
 include:
   - _pages

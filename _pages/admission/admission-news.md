@@ -4,6 +4,7 @@ title: "入学案内ニュース"
 permalink: admission/admission-news
 category: "admission"
 category_jp: "入学案内"
+var: admission-news
 is_lnb: true
 ---
 

@@ -1597,6 +1597,47 @@ li:hover .gnb2depth {
   font-weight: 500;
 }
 
+/* admission-news-area */
+.b-search {
+  text-align: center;
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid #d2d2d2;
+  padding: 20px 0;
+}
+
+.b-search select {
+  height: 30px;
+  line-height: 30px;
+  padding: 3px 10px 4px 5px;
+  border: 1px #e0e0e0 solid;
+  font-size: 1.5rem;
+}
+.b-search .search-box {
+  display: inline-block;
+}
+
+.b-search input {
+  line-height: 30px;
+  height: 30px;
+}
+.b-search input[type="text"] {
+  width: 180px;
+  border: 1px #e0e0e0 solid;
+  padding-left: 5px;
+}
+.b-search input[type="submit"] {
+  text-align: center;
+  padding: 0 1.5rem;
+  background: #0f8e81;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  border: 0;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
 /* news-box */
 .news-top-area {
   position: relative;

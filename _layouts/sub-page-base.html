@@ -44,7 +44,21 @@ assign items= site.data.variables.admission-menus %}{% else %} {% assign items =
           {% endif %}
         </div>
       </div>
-      <div class="sub-contents">{{content}}</div>
+      <div class="sub-contents">
+        {{content}}
+
+        <!-- student-visa page -->
+        {% if page.var == "student-visa" %} {%- include student-visa.html -%} {%
+        endif %}
+
+        <!-- etc-visa page -->
+        {% if page.var == "etc-visa" %} {%- include etc-visa.html -%} {% endif
+        %}
+
+        <!-- admission-news page -->
+        {% if page.var == "admission-news" %} {%- include admission-news.html
+        -%} {% endif %}
+      </div>
     </div>
   </div>
 </div>

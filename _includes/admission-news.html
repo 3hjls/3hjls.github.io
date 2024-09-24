@@ -1,0 +1,89 @@
+<div class="admission-new-area">
+  <div class="admission-news-top"></div>
+
+  <div id="list">
+    <table class="table list01">
+      <caption>
+        공지사항의 번호, 제목, 작성자, 등록일, 조회수를 나타낸 표.
+      </caption>
+      <colgroup>
+        <col width="10%" />
+        <col width="auto" />
+        <col width="10%" />
+        <col width="10%" />
+        <col width="10%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">제목</th>
+          <th scope="col">작성자</th>
+          <th scope="col">등록일</th>
+          <th scope="col">조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for post in site.categories.admission reversed %}
+        <tr>
+          <td class="eng">{{forloop.index }}</td>
+          <td>
+            <a href="{{ post.url }}"> {{post.title}} </a>
+          </td>
+          <td class="name">{{post.author}}</td>
+          <td class="date">{{post.date | date: "%Y-%m-%d"}}</td>
+          <td class="viewed">{{post.category | size}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="b-search">
+    <legend>게시물 검색</legend>
+    <select name="k_s" title="검색 분류 선택">
+      <option value="1">제목</option>
+      <option value="2">내용</option>
+    </select>
+    <div class="search-box">
+      <label for="search" class="blind">검색</label>
+      <input
+        type="text"
+        id="search-input"
+        name="key"
+        title="검색어 입력"
+        value=""
+      /><input type="submit" value="검색" />
+    </div>
+    <div id="results-container"></div>
+  </div>
+</div>
+<script src="/assets/scripts/search.js"></script>
+<script>
+  console.log("check on");
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById("search-input"),
+    resultsContainer: document.getElementById("results-container"),
+    searchResultTemplate:
+      '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    noResultsText: "No results found",
+    json: "/assets/scripts/search.json",
+  });
+  console.log(sjs);
+</script>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number"
+    >Page: {{ paginator.page }} of {{ paginator.total_pages }}</span
+  >
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+  <span class="next">Next</span>
+  {% endif %}
+</div>
