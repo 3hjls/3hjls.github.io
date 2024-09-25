@@ -5,10 +5,14 @@ layout: base
 <!-- if -->
 {% assign items = page.categories %}
 
-<!-- elsif  -->
+<!-- if  -->
 {% if items contains "news" %} {% assign items =
-site.data.variables.course-menus %} {% else %} {% assign items = 0 %} {% endif
-%}
+site.data.variables.course-menus %}
+<!-- elsif  -->
+{% elsif items contains "admission" %} {% assign items =
+site.data.variables.admission-menus %}
+<!-- else  -->
+{% else %} {% assign items = 0 %} {% endif %}
 
 <div class="sub-wrapper">
   <div class="sub-top">

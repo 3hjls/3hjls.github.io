@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 title: "2024年7月期 新入生募集中"
 date: 2024-02-01
 categories: admission
