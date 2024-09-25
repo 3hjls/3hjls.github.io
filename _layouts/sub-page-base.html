@@ -47,17 +47,24 @@ assign items= site.data.variables.admission-menus %}{% else %} {% assign items =
       <div class="sub-contents">
         {{content}}
 
-        <!-- student-visa page -->
-        {% if page.var == "student-visa" %} {%- include student-visa.html -%} {%
-        endif %}
-
-        <!-- etc-visa page -->
-        {% if page.var == "etc-visa" %} {%- include etc-visa.html -%} {% endif
+        <!-- course-event page -->
+        {% if page.var == "event" %} {%- include course/event.html -%} {% endif
         %}
 
+        <!-- student-visa page -->
+        {% if page.var == "student-visa" %} {%- include
+        admission/student-visa.html -%} {% endif %}
+
+        <!-- etc-visa page -->
+        {% if page.var == "etc-visa" %} {%- include admission/etc-visa.html -%}
+        {% endif %}
+
         <!-- admission-news page -->
-        {% if page.var == "admission-news" %} {%- include admission-news.html
-        -%} {% endif %}
+        {% if page.var == "admission-news" %} {%- include
+        admission/admission-news.html -%} {% endif %}
+
+        <!-- access page -->
+        {% if page.var == "access" %} {%- include access.html -%} {% endif %}
       </div>
     </div>
   </div>

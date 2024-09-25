@@ -1,22 +1,61 @@
-<div class="news-top">
-  <h3>news</h3>
-</div>
+---
+layout: base
+---
 
-<ul class="news-list">
-  {% for post in site.categories.news %}
-  <li class="news-item">
-    <a href="/">
-      <div class="img-box">
-        <img
-          src="https://images.freeimages.com/images/large-previews/31c/red-fox-in-the-wild-1-1624832.jpg"
-          alt=""
-        />
+<!-- if -->
+{% assign items = page.categories %}
+
+<!-- elsif  -->
+{% if items contains "news" %} {% assign items =
+site.data.variables.course-menus %} {% else %} {% assign items = 0 %} {% endif
+%}
+
+<div class="sub-wrapper">
+  <div class="sub-top">
+    <div class="sub-vis-box">
+      <p>
+        <img src="" alt="3H学校" />
+      </p>
+    </div>
+  </div>
+  <div class="sub">
+    <div class="sub-left">
+      <h2 class="about-title">
+        <span>{{page.category_jp}}</span>
+      </h2>
+      {% if items != 0 %}
+      <ul>
+        {% for menu in items %}
+        <li class="about-list-item">
+          <a href="/{{ menu.category }}/{{ menu.url }}">{{ menu.title }}</a
+          ><i class="xi-play"></i>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="sub-right">
+      <div class="sub-right-title">
+        <h3>{{page.category_jp}}</h3>
+        <div class="sub-nav">
+          <span><i class="xi-home"></i></span>
+          <i class="xi-angle-right-min"></i> <span>{{page.category_jp}}</span>
+          {% if page.is_lnb == true %}
+          <i class="xi-angle-right-min"></i>
+          <span>{{page.title}}</span>
+          {% endif %}
+        </div>
       </div>
-      <div class="txt-box">
-        <p class="date">2024-02-02</p>
-        <p class="title">ブックスカラシップ授与</p>
+      <div class="sub-contents">
+        <div class="content-area">
+          <h3 class="content-title-area">{{page.title}}</h3>
+          <div class="content-meta-area">
+            <p><span>작성자</span>{{page.author}}</p>
+            <p><span>등록일</span>{{page.date | date: "%Y-%m-%d"}}</p>
+          </div>
+          <div class="content-text-area">{{content}}</div>
+        </div>
       </div>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+    </div>
+  </div>
+</div>

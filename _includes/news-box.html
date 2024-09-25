@@ -2,9 +2,9 @@
   <div class="inner">
     <div class="news-content">
       <div class="news-top-area">
-        <div class="news-title">入学案内 News</div>
+        <div class="news-title">学校行事 News</div>
         <p class="news-button">
-          <a href="/news" class="news-btn"
+          <a href="/course/event" class="news-btn"
             >MORE
             <i class="xi-plus-min"></i>
           </a>
@@ -16,7 +16,7 @@
           <li class="news-item">
             <a href="{{ post.url }}">
               <div class="img-box">
-                <img src="/assets/images/{{ post.featured_image }}" alt="" />
+                <img src="{{ post.pic_path }}" alt="" />
               </div>
               <div class="txt-box">
                 <p class="news-date">{{ post.date | date: "%Y-%m-%d" }}</p>

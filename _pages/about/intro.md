@@ -7,6 +7,8 @@ category_jp: "学校紹介"
 is_lnb: true
 ---
 
+![introduction](https://go3h.com/_src/1497/img20160229125111737994.jpg)
+
 # 夢をかなえましょう！！
 
 ## 校長：金　秀晧

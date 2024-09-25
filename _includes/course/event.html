@@ -1,0 +1,21 @@
+<div id="about_news">
+  <div id="gallery">
+    <!--Gallery-->
+    <ul class="gallery-ul">
+      {% for post in site.categories.news %}
+      <li class="gallery-li">
+        <a href="{{post.url}}">
+          <div
+            class="gallery-pic-path"
+            style="background-image: url({{post.pic_path}});"
+          ></div>
+          <div class="txt-box">
+            <p class="g-title">{{post.title}}</p>
+            <p class="g-date"><span>{{post.date | date: "%Y-%m-%d"}}</span></p>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

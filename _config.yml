@@ -35,6 +35,8 @@ sass:
 author: "3H Admin"
 
 # pagination settings
+paginate: 2 # 한 페이지에 표시할 포스트 수
+paginate_path: "/admission/admission-news/page:num/" # 페이지 경로
 
 # Reading Files
 include:
